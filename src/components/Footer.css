@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+
+footer a {
+    width: max-content;
+}
+
+
+footer img {
+    height: 2rem;
+}
