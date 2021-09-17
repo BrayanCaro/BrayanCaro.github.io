@@ -47,11 +47,11 @@ export default class Writer extends Component {
 
     render() {
         return (
-            <h2 ref={this.writer}
+            <span ref={this.writer}
                 className="writer writer-title"
                 style={{'--chars': this.state.chars}}>
                 {this.greetings[this.state.greeting]}
-            </h2>
+            </span>
         );
     }
 }

@@ -1,0 +1,50 @@
+.projects {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.blocks-2 {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+@media (max-width: 600px) {
+    .blocks-2 {
+        flex-flow: column;
+    }
+
+    .project:nth-child(odd) {
+        flex-flow: column-reverse;
+    }
+
+    .projects {
+        width: 100%;
+    }
+}
+
+
+.blocks-2 > * {
+    flex: 50%;
+}
+
+.blocks-2 > .description {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.blocks-2 > .images {
+    max-height: 100vw;
+}
+
+.blocks-2 > .images > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
