@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "browserslist": "^4.21.4",
     "gh-pages": "^3.2.3"
   }
 }
