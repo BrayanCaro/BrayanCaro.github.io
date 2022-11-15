@@ -47,6 +47,7 @@ jobs:
     steps:
       - name: Download build result for job build
         uses: actions/download-artifact@v3
+        id: build
         with:
           name: build
       - name: Setup Pages
@@ -54,7 +55,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: build
+          path: ${{steps.build.outputs.download-path}}
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
