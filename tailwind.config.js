@@ -1,13 +1,11 @@
-/** @type {import('tailwindcss').Config} */
+import FluidTypePlugin from "tailwindcss-fluid-type";
 
-/**
- * https://hihayk.github.io/scale/#2/2/75/75/34/9/57/16/FE745E/254/116/94/d-0
- * https://hihayk.github.io/scale/#4/5/75/75/34/9/57/16/FE745E/254/116/94/d-0
- */
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: ["*.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      // https://hihayk.github.io/scale/#4/5/75/75/34/9/57/16/FE745E/254/116/94/d-0
       colors: {
         red: {
           50: '#FFCBCC',
@@ -24,5 +22,6 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-fluid-type")],
-};
+  plugins: [FluidTypePlugin],
+}
+
