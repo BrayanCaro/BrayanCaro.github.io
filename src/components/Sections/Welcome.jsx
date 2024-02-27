@@ -1,12 +1,12 @@
 export default function Welcome() {
   return (
-    <section className="col-span-full grid grid-cols-subgrid grid-rows-2 gap-12 sm:grid-rows-subgrid">
-      <div className="bg-red-50 text-red-950 col-span-full sm:col-span-8 p-3 rounded-3xl">
-        <h1 className="font-bold text-3xl">Brayan Martínez Santana</h1>
+    <section className="col-span-full grid grid-cols-subgrid grid-rows-3  gap-6 sm:gap-12 md:grid-rows-subgrid">
+      <div className="bg-red-50 text-red-950 col-span-full md:col-span-8 p-3 sm:p-6 rounded-3xl row-span-2 md:row-span-full">
+        <h1 className="font-bold text-right text-3xl">Brayan Martínez Santana</h1>
+        {/*
         <h2 className="font-bold text-xl text-red-800 mb-6">
           Full Stack Developer
         </h2>
-        {/*
         <p className="w-full">
           Cuento con una amplia experiencia en:
           <ul className="list-disc list-inside">
@@ -34,7 +34,7 @@ export default function Welcome() {
         </p>
         */}
       </div>
-      <div className="p-3 bg-red-50 col-span-full sm:col-span-4 text-red-900 rounded-3xl"></div>
+      <div className="p-3 bg-red-50 col-span-full md:col-span-4 text-red-900 rounded-3xl"></div>
     </section>
   );
 }
