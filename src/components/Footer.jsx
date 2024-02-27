@@ -1,44 +1,30 @@
-import './Footer.css'
+import { Github, Linkedin, StackOverflow } from "react-bootstrap-icons";
 
 export default function Footer() {
-    return <div className="bg-dark footer-bg">
-        <svg className="footer-wave" preserveAspectRatio="none" height="14vh" width="100%"
-             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="var(--black)"
-                  d="M0,96L20,85.3C40,75,80,53,120,69.3C160,85,200,139,240,176C280,213,320,235,360,213.3C400,192,440,128,480,101.3C520,75,560,85,600,122.7C640,160,680,224,720,213.3C760,203,800,117,840,106.7C880,96,920,160,960,181.3C1000,203,1040,181,1080,186.7C1120,192,1160,224,1200,208C1240,192,1280,128,1320,90.7C1360,53,1400,43,1420,37.3L1440,32L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"/>
-        </svg>
-        {/*<h2 className="container title">*/}
-        {/*    Get in touch*/}
-        {/*</h2>*/}
-        <footer className="container">
-            <div className="column">
-                <h3>See</h3>
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-            </div>
-            <div className="column">
-                <h3>Follow</h3>
-                <a href="https://es.stackoverflow.com/users/101864/brayan-mart%c3%adnez-santana">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="var(--pink)" height={32}>
-                        <path className="st0" d="M84.4 93.8V70.6h7.7v30.9H22.6V70.6h7.7v23.2z"/>
-                        <path className="st1"
-                              d="M38.8 68.4l37.8 7.9 1.6-7.6-37.8-7.9-1.6 7.6zm5-18l35 16.3 3.2-7-35-16.4-3.2 7.1zm9.7-17.2l29.7 24.7 4.9-5.9-29.7-24.7-4.9 5.9zm19.2-18.3l-6.2 4.6 23 31 6.2-4.6-23-31zM38 86h38.6v-7.7H38V86z"/>
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/brayan-mart%C3%ADnez-santana-0845b0212/">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 76.624 65.326">
-                        <path
-                            d="M958.98,112.559h-9.6V97.525c0-3.585-.064-8.2-4.993-8.2-5,0-5.765,3.906-5.765,7.939v15.294h-9.6V81.642h9.216v4.225h.129a10.1,10.1,0,0,1,9.093-4.994c9.73,0,11.524,6.4,11.524,14.726ZM918.19,77.416a5.571,5.571,0,1,1,5.57-5.572,5.571,5.571,0,0,1-5.57,5.572m4.8,35.143h-9.61V81.642h9.61Zm40.776-55.2h-55.21a4.728,4.728,0,0,0-4.781,4.67v55.439a4.731,4.731,0,0,0,4.781,4.675h55.21a4.741,4.741,0,0,0,4.8-4.675V62.025a4.738,4.738,0,0,0-4.8-4.67"
-                            transform="translate(-903.776 -57.355)" fill="var(--pink)"/>
-                    </svg>
-                </a>
-                <a href="https://github.com/BrayanCaro">
-                    <svg height="32" viewBox="0 0 16 16" fill="var(--pink)">
-                        <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                </a>
-            </div>
-        </footer>
-    </div>
+  return (
+    <footer className="col-span-full grid grid-cols-subgrid">
+      <div className="p-6 bg-red-50 text-red-900 col-span-full rounded-3xl">
+        <h3>Follow</h3>
+        <ul className="flex gap-8">
+          <li>
+            <a href="https://es.stackoverflow.com/users/101864/brayan-mart%c3%adnez-santana">
+              <StackOverflow size={32} />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/brayan-mart%C3%ADnez-santana-0845b0212/">
+              <Linkedin size={32} />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/BrayanCaro">
+              <Github size={32} />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  );
 }
