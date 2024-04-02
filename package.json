@@ -13,7 +13,7 @@
     "react-bootstrap-icons": "^1.11.3",
     "react-dom": "^18.2.0",
     "react-typing-effect": "^2.0.5",
-    "tailwindcss-fluid-type": "^2.0.3"
+    "tailwindcss-fluid-type": "^2.0.6"
   },
   "devDependencies": {
     "@types/react": "^18.2.73",
