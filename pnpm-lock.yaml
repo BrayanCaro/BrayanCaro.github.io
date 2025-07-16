@@ -12,8 +12,8 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0
       react-bootstrap-icons:
-        specifier: ^1.11.5
-        version: 1.11.5(react@19.1.0)
+        specifier: ^1.11.6
+        version: 1.11.6(react@19.1.0)
       react-dom:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
@@ -554,8 +554,8 @@ packages:
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
 
-  react-bootstrap-icons@1.11.5:
-    resolution: {integrity: sha512-eOhtFJMUqw98IJcfKJsSMZkFHCeNPTTwXZAe9V9d4mT22ARmbrISxPO9GmtWWuf72zQctLeZMGodX/q6wrbYYg==}
+  react-bootstrap-icons@1.11.6:
+    resolution: {integrity: sha512-ycXiyeSyzbS1C4+MlPTYe0riB+UlZ7LV7YZQYqlERV2cxDiKtntI0huHmP/3VVvzPt4tGxqK0K+Y6g7We3U6tQ==}
     peerDependencies:
       react: '>=16.8.6'
 
@@ -1100,7 +1100,7 @@ snapshots:
       object-assign: 4.1.1
       react-is: 16.13.1
 
-  react-bootstrap-icons@1.11.5(react@19.1.0):
+  react-bootstrap-icons@1.11.6(react@19.1.0):
     dependencies:
       prop-types: 15.8.1
       react: 19.1.0
